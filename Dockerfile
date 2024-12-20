@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY consumer.py .
+COPY producer.py .
 
-CMD ["python", "consumer.py"]
+CMD ["python", "producer.py"]
